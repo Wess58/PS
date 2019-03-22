@@ -1,0 +1,27 @@
+.cutlery {
+margin-left: 50px;
+margin-top: 2.5em;
+}
+
+#pan {
+  width: 200px;
+  height: 200px;
+  margin: -3em;
+}
+#fork {
+  width: 90px;
+  height: 90px;
+
+}
+
+#spoon {
+  width: 90px;
+  height: 90px;
+
+}
+
+p {
+  font-family: 'Rock Salt', cursive;
+  font-size: 70px;
+  text-decoration: underline;
+}
