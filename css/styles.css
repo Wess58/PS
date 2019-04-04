@@ -11,78 +11,7 @@ body {
 }
 
 /* NAVBAR START*/
-nav {
-  text-align: center;
-  background-color: transparent;
-  height: 10%;
-  transition: all .3s ease;
-  font-family: 'Teko', sans-serif;
-}
 
-.navbar-brand .red {
-  color: #ff0000;
-}
-
-/* Border X get width  */
-nav a {
-  color: #000;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a:before, nav a:after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: '';
-  background: #000;
-  transition: all 0.3s;
-}
-
-nav a:before {
-  left: 0px;
-  top: 0px;
-}
-
-nav a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-nav a:hover:before, nav a:hover:after {
-  opacity: 1;
-  width: 100%;
-}
-
-.scrolled {
-  background-image: linear-gradient(45deg, rgba(231, 49, 49, 0.9 ), rgba(231, 140, 49, 0.9), rgba(231, 231, 49, 0.7), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)),url("../images/IntroPic.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-nav img {
-  width: 30px;
-  height: 30px;
-  visibility: hidden;
-}
 
 /* NAVBAR END */
 /* TOTOP BTN */
@@ -100,13 +29,13 @@ nav img {
 
 .Intro {
   height: 80vh;
-  background-image: linear-gradient(45deg, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/IntroPic.jpg");
+  background-image: linear-gradient(45deg, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/Intropic.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-attachment: fixed;
   padding: 5%;
 }
@@ -168,14 +97,14 @@ h1 {
 
 .arrow:before,
 .arrow:after {
-  background: #ff0000;
+  background: #fff;
   content: '';
   display: block;
   height: 3px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
+  width: 20px;
 }
 
 .arrow:before {
@@ -206,7 +135,7 @@ h1 {
 
 /* SCROLL DOWN ARROWS END*/
 .footer {
-  padding-top: 10%;
+  padding-top: 5%;
   text-align: center;
   /* background-image: linear-gradient(315deg,rgba(147, 255, 0), rgba(20, 255, 0, 0.5), rgba(0, 255, 108, 0.5) );
   background-repeat: no-repeat;
@@ -223,7 +152,7 @@ h1 {
   text-align: left;
 }
 
-.footer h2{
+.footer h2 {
   text-align: left;
 }
 
@@ -231,6 +160,13 @@ h1 {
   width: 30px;
   height: 30px;
   margin: 5px;
+}
+
+.hoursRow img {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  margin-right: 20px;
 }
 
 .footer .red {
@@ -301,6 +237,12 @@ ul {
   transition: all .1s .1s ease-in-out;
 }
 
+.formCard {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10%;
+}
+
 input {
   background-image: url("../images/users.png");
   background-repeat: no-repeat;
@@ -309,7 +251,7 @@ input {
   width: 80%;
   height: 50px;
   margin: auto;
-  margin: 10px;
+  margin: 5px;
   border-radius: 20px;
   outline: none;
   padding: 10px 10px 10px 35px;
@@ -324,10 +266,10 @@ textarea {
   font-size: 20px;
   width: 80%;
   margin: auto;
-  margin: 10px;
+  margin: 5px;
   border-radius: 20px 20px 0 20px;
   outline: none;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 35px;
   border: 2px solid #ff0000;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -350,6 +292,10 @@ button:hover {
 
 .secondaryContact {
   display: inline;
+}
+
+.Embeded_map {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* CUSTOM TOOLTIPS END*/
@@ -375,7 +321,7 @@ button:hover {
 
 @media (max-width: 1280px) {}
 
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   .Intro {
     height: 70vh;
   }
@@ -397,3 +343,76 @@ button:hover {
     transform: translate3d(-50%, -50%, 0);
   }
 }
+
+
+
+
+/* nav {
+  text-align: center;
+  background-color: transparent;
+  height: 10%;
+  transition: all .3s ease;
+  font-family: 'Teko', sans-serif;
+}
+
+.navbar-brand .red {
+  color: #ff0000;
+} */
+
+/* Border X get width  */
+/* nav a {
+  border-left: 1px solid rgba(0, 0, 0);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #000;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+nav a:hover {
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+nav a:before, nav a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #000;
+  transition: all 0.3s;
+}
+
+nav a:before {
+  left: 0px;
+  top: 0px;
+}
+
+nav a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+nav a:hover:before, nav a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.scrolled {
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+} */
