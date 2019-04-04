@@ -7,16 +7,14 @@
   <link rel="shortcut icon" href="images/pan.png">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Rock+Salt|Pangolin|Teko" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <script src="js/validate_form.js"></script>
+  <link rel="stylesheet" href="css/circle_menu.css">
   <title>PIKA SAUCE</title>
 </head>
 
 <body>
 
   <!-- NAVBAR START -->
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <!-- <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
     <h1 class="navbar-brand">PS | <u><span class="red">P</span>ika <span class="red">S</span>auce</u></h1>
     <img src="images/menu.png" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -25,14 +23,31 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">FEATURED DISHES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#contact">CONTACT US</a>
         </li>
       </ul>
     </div>
 
+  </nav> -->
+  <nav class="top-right open">
+    <a class="disc l1">
+      <div>CONTACT US</div>
+    </a>
+    <a class="disc l2">
+      <div>Photos</div>
+    </a>
+    <a class="disc l3">
+      <div>FEATURED DISHES</div>
+    </a>
+    <a class="disc l4">
+      <div>HOME</div>
+    </a>
+    <a class="disc l5 toggle">
+      MENU
+    </a>
   </nav>
 
   <!-- NAVBAR END -->
@@ -41,12 +56,12 @@
   <!-- INTRO WITH BCKGRND IMAGE -->
   <div class="Intro">
 
-    <div class="slogan">
+    <!-- <div class="slogan">
       <p>
         <span id="text1"><span class="red">G</span>OOD FOOD ,</span>
         <span id="text2"><span class="red">G</span>OOD MOOD</span>
       </p>
-    </div>
+    </div> -->
 
     <div class="arrow arrow-first"></div>
     <div class="arrow arrow-second"></div>
@@ -68,22 +83,38 @@
     </div>
   </div>
 
+  <hr>
+
   <div class="container AboutUs">
 
 
   </div>
 
+  <hr>
 
-  <div class="footer">
+
+  <div class="footer" id="contact">
     <div class="container">
       <div class="row">
 
 
         <div class="col-md-4">
           <h2><u><span class="red">H</span>OURS</u></h2>
-          <p>Monday through Saturday</p>
-          <p>8AM - 8PM</p>
-          <p>Closed Sundays</p>
+          <div class="row hoursRow">
+            <img src="images/event.png" alt="">
+            <p>Monday through Saturday</p>
+
+          </div>
+          <div class="row hoursRow">
+            <img src="images/clock.png" alt="">
+            <p>8AM - 8PM</p>
+
+          </div>
+          <div class="row hoursRow">
+            <img src="images/event.png" alt="">
+            <p>Closed Sundays</p>
+
+          </div>
 
           <div class="map">
 
@@ -114,17 +145,23 @@
           <h2><u><span class="red">G</span>ET IN <span class="red">T</span>OUCH</u></h2>
 
 
-          <form name="RegForm" action="" onsubmit="return sendEmail()" method="post">
+          <div class="card formCard">
 
-            <input type="text" name="Name" onfocus="this.value=''" placeholder="">
 
-            <input type="text" name="EMail" onfocus="this.value=''">
+            <form name="RegForm" action="" onsubmit="return sendEmail()" method="post">
 
-            <textarea cols="55" name="Comment">  </textarea>
+              <input type="text" name="Name" onfocus="this.value=''" placeholder="Your Name">
 
-            <button class="btn" type="submit" value="send" name="Submit">SUBMIT</button>
+              <input type="text" name="EMail" onfocus="this.value=''" placeholder="Your Email">
 
-          </form>
+              <textarea cols="55" name="Comment" placeholder="Message"></textarea>
+
+              <button class="btn" type="submit" value="send" name="Submit">SUBMIT</button>
+
+            </form>
+
+          </div>
+
 
           <div style="width: 100%; height: 15px; border-bottom: 1px solid #FF0000; text-align: center">
             <span style="font-size: 20px; background-color: whitesmoke; padding: 0 5px;">
@@ -151,7 +188,7 @@
 
     <hr>
 
-    <div class=" Embeded_map">
+    <div class="Embeded_map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0182536496995!2d36.959504714753784!3d-1.1474437991630295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4741061089b3%3A0xa8e8bf598f03ecf0!2sPika+Sauce!5e0!3m2!1sen!2ske!4v1553604261162"
         width="100%" height="200" frameborder="10" style="border:0" allowfullscreen></iframe>
 
@@ -160,7 +197,9 @@
 
   <div class="copyright" style="text-align:center;">
 
-    <p></p>
+    <p>
+      <p>&#9400; 2019 Pika_Sauce | All Rights Reserved</p>
+    </p>
 
   </div>
 
@@ -168,30 +207,13 @@
   </div>
 
   <!-- BACK TO TOP BUTTON -->
-  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" onclick="topFunction()" id="myBtn" title="Go to top">
-    <defs>
-      <style>
-        .cls-1 {
-          fill: #000;
-          stroke: none;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-          stroke-width: 2px;
-        }
-      </style>
-    </defs>
-    <title />
-    <g id="arrow-top">
-      <line class="cls-1" x1="15.87" x2="16.13" y1="3" y2="29" />
-      <line class="cls-1" x1="15.87" x2="20.91" y1="3" y2="6.95" />
-      <line class="cls-1" x1="15.87" x2="10.91" y1="3" y2="7.05" />
-    </g>
-  </svg>
-
 
   <!-- BACK TO TOP BUTTON END-->
 
   <!-- SCRIPTS -->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/validate_form.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
