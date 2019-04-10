@@ -14,24 +14,7 @@
 <body>
 
   <!-- NAVBAR START -->
-  <!-- <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-    <h1 class="navbar-brand">PS | <u><span class="red">P</span>ika <span class="red">S</span>auce</u></h1>
-    <img src="images/menu.png" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">FEATURED DISHES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT US</a>
-        </li>
-      </ul>
-    </div>
 
-  </nav> -->
   <nav class="top-right open" id="nav">
     <a href="#!"  data-scroll="#contact" class="disc l1 ">
       <div>CONTACT US</div>
@@ -54,12 +37,15 @@
 
   <h1 class="navbar-brand">PS | <u><span class="red">P</span>ika <span class="red">S</span>auce</u></h1>
 
+  <a href="#!" data-scroll="#Intro"><img onclick="topFunction()" id="myBtn" src="images/totop.png" title="Go to top"></a>
+
+
 
   <!-- INTRO WITH BCKGRND IMAGE -->
   <div class="Intro paralasic" id="Intro" data-paralasic="0.3">
 
 
-    <div class="slogan">
+    <div class="slogan slide-up-fade-in">
       <p>
         <span id="text1"><span class="red">G</span>OOD FOOD ,</span>
         <br>
@@ -154,11 +140,11 @@
 
             <form name="RegForm" action="" onsubmit="return sendEmail()" method="post">
 
-              <input type="text" name="Name" onfocus="this.value=''" placeholder="Your Name">
+              <input type="text" name="Name" onfocus="this.value=''" placeholder="Your Name" required>
 
-              <input type="text" name="EMail" onfocus="this.value=''" placeholder="Your Email">
+              <input type="email" name="Email" onfocus="this.value=''" placeholder="Your Email" required>
 
-              <textarea cols="55" name="Comment" placeholder="Message"></textarea>
+              <textarea cols="55" name="Comment" placeholder="Message" required></textarea>
 
               <button class="btn" type="submit" value="send" name="Submit">SUBMIT</button>
 
@@ -217,7 +203,6 @@
   <!-- SCRIPTS -->
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/validate_form.js"></script>
   <script src="js/smartScroll.min.js"></script>
   <script type="text/javascript">
   (function ($) {
@@ -230,12 +215,10 @@
       }, function () {
           console.log("callback");
       });
-  })(jQuery);  
+  })(jQuery);
 
   </script>
   <script src="js/paraLasic.1.1.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
