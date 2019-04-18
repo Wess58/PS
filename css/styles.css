@@ -1,33 +1,40 @@
-html {
-  /* scroll-behavior: smooth; */
-}
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: whitesmoke;
+  background-color: #fff;
   font-family: 'Teko', sans-serif;
 }
 
-/* NAVBAR START*/
-/* NAVBAR END */
 /* TOTOP BTN */
 #myBtn {
   height: 40px;
   width: 40px;
   display: none;
-  float: right;
   position: fixed;
+  bottom: 50px;
+  right: 30px;
   z-index: 99;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
+hr {
+  visibility: ;
+}
+
+/* *********************************** */
+/* INTRO SECTION STYLES START*/
+/* *********************************** */
 .Intro {
   height: 90vh;
-  background-image: linear-gradient(45deg, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/IntroPic.jpg");
+  /* background-image: -webkit-linear-gradient(bottom left, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/IntroPic.jpg");
+  background-image: -o-linear-gradient(bottom left, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/IntroPic.jpg");
+  background-image: linear-gradient(to top right, rgba(231, 49, 49, 0.2), rgba(231, 140, 49, 0.3), rgba(231, 231, 49, 0.5), rgba(140, 231, 49, 0.7), rgba(231, 231, 49)), url("../images/IntroPic.jpg"); */
+  background-image: -webkit-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
+  background-image: -o-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -45,7 +52,8 @@ body {
   -webkit-text-stroke-color: #ff0000;
 }
 
-h1 {
+.navbar-brand {
+  color: #fff;
   font-family: 'Rock Salt', cursive;
   font-size: 20px;
   position: fixed;
@@ -68,80 +76,26 @@ h1 {
   font-size: 100px;
   letter-spacing: 5px;
   font-family: 'Knewave', cursive;
-  /* color: rgba(0, 0, 0, 0.9); */
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
 }
 
-/* SCROLL DOWN ARROWS */
-.arrow {
-  opacity: 0;
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform-origin: 70% 70%;
-  transform: translate3d(-70%, -70%, 0);
+/* *********************************** */
+/* SERVICES SECTION STYLES START*/
+/* *********************************** */
+.services img {
+  width: 70px;
+  height: 70px;
 }
 
-.arrow-first {
-  animation: arrow-movement 3s ease-in-out infinite;
-}
-
-.arrow-second {
-  animation: arrow-movement 3s 1s ease-in-out infinite;
-}
-
-.arrow:before,
-.arrow:after {
-  background: #fff;
-  content: '';
-  display: block;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-}
-
-.arrow:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
-}
-
-.arrow:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
-}
-
-/* Animation */
-@keyframes arrow-movement {
-  0% {
-    opacity: 0;
-    top: 45%;
-  }
-
-  70% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-/* SCROLL DOWN ARROWS END*/
+/* *********************************** */
+/* FOOTER AND BELOW STYLES START*/
+/* *********************************** */
 .footer {
+  color: #464545;
   padding-top: 5%;
   text-align: center;
-  /* background-image: linear-gradient(315deg,rgba(147, 255, 0), rgba(20, 255, 0, 0.5), rgba(0, 255, 108, 0.5) );
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
 }
 
 .footer p {
@@ -234,6 +188,7 @@ ul {
   transition: all .1s .1s ease-in-out;
 }
 
+/* CUSTOM TOOLTIPS END*/
 .formCard {
   background-color: transparent;
   border: none;
@@ -295,117 +250,325 @@ button:hover {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* CUSTOM TOOLTIPS END*/
-@keyframes tipUp {
+/* FADE IN UP ANIMATION START*/
+.slide-up-fade-in {
+  animation: slide-up-fade-in ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: slide-up-fade-in ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: slide-up-fade-in ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: slide-up-fade-in ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: slide-up-fade-in ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+  opacity: 0;
+  opacity: 1\9;
+}
+
+@keyframes slide-up-fade-in {
   0% {
-    transform: translateY(50px) rotateZ(45deg);
+    opacity: 0;
+    transform: translate(0px, 150px);
   }
 
   100% {
-    transform: translateY(-70px) rotateZ(45deg);
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
 
-@keyframes lineUp {
+@-moz-keyframes slide-up-fade-in {
   0% {
-    transform: translateY(50px);
+    opacity: 0;
+    -moz-transform: translate(0px, 150px);
   }
 
   100% {
-    transform: translateY(-70px);
+    opacity: 1;
+    -moz-transform: translate(0px, 0px);
   }
 }
 
+@-webkit-keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 150px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-o-keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    -o-transform: translate(0px, 150px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translate(0px, 0px);
+  }
+}
+
+@-ms-keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    -ms-transform: translate(0px, 150px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0px, 0px);
+  }
+}
+
+/* FADE IN UP ANIMATION END*/
+/* SCROLL DOWN ANIMATION START*/
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+.scroll-down {
+  margin: 0;
+  border: 2px solid #fff8;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.scroll-down a {
+  display: block;
+  opacity: 0;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 0 auto;
+  -o-background-size: 0 auto;
+  -webkit-background-size: 0 auto;
+  background-size: 0 auto;
+  -webkit-animation: pulse 1.5s 0s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0s infinite normal ease forwards;
+  animation: pulse 1.5s 0s infinite normal ease forwards;
+  background-image: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+.scroll-down a:before, .scroll-down a:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg") no-repeat center top;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+.scroll-down a:before {
+  -webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  animation: pulse 1.5s 0.25s infinite normal ease forwards;
+}
+
+.scroll-down a:after {
+  -webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  animation: pulse 1.5s 0.5s infinite normal ease forwards;
+}
+
+/* SCROLL DOWN ANIMATION END*/
 @media (max-width: 1280px) {}
 
-@media (max-width: 300px) {
+@media only screen and (min-width: 768px) {
   .Intro {
-    height: 70vh;
-  }
-
-  nav img {
-    visibility: visible;
+    height: 50vh !important;
   }
 
   .slogan p {
     font-size: 25px;
   }
-
-  .arrow {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform-origin: 50% 50%;
-    transform: translate3d(-50%, -50%, 0);
-  }
 }
-
-/* nav {
-  text-align: center;
-  background-color: transparent;
-  height: 10%;
-  transition: all .3s ease;
-  font-family: 'Teko', sans-serif;
-}
-
-.navbar-brand .red {
-  color: #ff0000;
-} */
-/* Border X get width  */
-/* nav a {
-  border-left: 1px solid rgba(0, 0, 0);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  color: #000;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-  transition: all .1s;
-}
-
-nav a:hover {
-  border-left: 1px solid rgba(0, 0, 0, 0);
-  color: #000;
-}
-
-nav a:before, nav a:after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: '';
-  background: #000;
-  transition: all 0.3s;
-}
-
-nav a:before {
-  left: 0px;
-  top: 0px;
-}
-
-nav a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-nav a:hover:before, nav a:hover:after {
-  opacity: 1;
-  width: 100%;
-}
-
-.scrolled {
-  background-color: #fff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-nav img {
-  width: 30px;
-  height: 30px;
-  visibility: hidden;
-} */
