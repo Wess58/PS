@@ -145,7 +145,7 @@ nav.top-right {
   left: 200px;
   right: 200px;
   bottom: 200px;
-  background: #ffc00e;
+  background: #ff6347!important;
   transition-delay: 0.4s;
 }
 .open .l5 {
