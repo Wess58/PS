@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800,900');
 
 nav {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Dosis', sans-serif;
   display: block;
   position: fixed;
   z-index: 1;
@@ -31,7 +31,8 @@ nav.top-right {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  font-size: 25px ;
+  font-size: 20px ;
+  font-weight: 600;
   line-height: 40px;
   padding-top: 10px;
   border-radius: 250px;
@@ -145,7 +146,8 @@ nav.top-right {
   left: 200px;
   right: 200px;
   bottom: 200px;
-  background: #ff6347!important;
+  color: #fff9!important;
+  background: #F00!important;
   transition-delay: 0.4s;
 }
 .open .l5 {
@@ -154,11 +156,11 @@ nav.top-right {
   opacity: 1;
 }
 .open .l5:hover {
-  background: shade(#ffc00e, 90%);
+  background: shade(#FF0000, 90%);
   transition-delay: 0s;
 }
 .open .l5:active {
-  background: shade(#ffc00e, 50%);
+  background: shade(#FF0000, 50%);
 }
 .open .l5.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
