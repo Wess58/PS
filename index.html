@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/pan.png">
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Rock+Salt|Pangolin|Teko|Chango|Knewave|Rammetto+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Teko|Knewave|Dosis" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/circle_menu.css">
@@ -13,19 +17,34 @@
 
 <body>
 
+
+
+  <!-- EXAMPLE WEBSITES LISTING
+
+          1. https://www.whatsyourgusto.com/
+          2. https://thegoodburger.com/en
+          3. https://renewalcc.com/
+          4. https://kontainer.com/
+          5. https://www.codigo.co/about-us
+
+
+
+
+ -->
+
   <!-- NAVBAR START -->
 
   <nav class="top-right open" id="nav">
-    <a href="#!"  data-scroll="#contact" class="disc l1 ">
+    <a href="#!" data-scroll="#contact" class="disc l1 ">
       <div>Contact Us</div>
     </a>
     <a class="disc l2 ">
-      <div>Photos</div>
+      <div>Gallery</div>
     </a>
     <a href="#!" data-scroll="#services" class="disc l3 ">
-      <div>Featured Dishes</div>
+      <div>Services</div>
     </a>
-    <a  href="#!" data-scroll="#Intro" class="disc l4 ">
+    <a href="#!" data-scroll="#Intro" class="disc l4 ">
       <div>Home</div>
     </a>
     <a class="disc l5 toggle">
@@ -37,27 +56,35 @@
 
   <h1 class="navbar-brand">PS | <u><span class="red">P</span>ika <span class="red">S</span>auce</u></h1>
 
-  <a href="#!" data-scroll="#Intro"><img onclick="topFunction()" id="myBtn" src="images/totop.png" title="Go to top"></a>
+
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#!" data-scroll="#Intro"><img onclick="topFunction()" id="myBtn" title="Go to top" src="images/totop.png"></a>
+  <!-- BACK TO TOP BUTTON END-->
+
 
 
 
   <!-- INTRO WITH BCKGRND IMAGE -->
-  <div class="Intro paralasic mb-5" id="Intro" data-paralasic="0.3">
+
+
+  <div class="Intro paralasic mb-5" id="Intro" data-paralasic="0.25">
 
 
     <div class="slogan slide-up-fade-in">
       <p>
-        <span id="text1"><span class="red">G</span>OOD FOOD ,</span>
+        <span id="text1"><span class="red">G</span>OOD FOOD <span class="comma">,</span></span>
         <br>
         <span id="text2"><span class="red">G</span>OOD MOOD</span>
       </p>
     </div>
 
-    <p class="scroll-down"><a href="#complements" class="animate">More</a></p>
 
-
-    <div class="arrow arrow-first"></div>
-    <div class="arrow arrow-second"></div>
+    <div class="downArrows rellax" data-rellax-speed="-4" data-rellax-percentage="0.05">
+      <p class="scroll-down"><a href="#!" data-scroll="#services" class="animate">MORE</a></p>
+      <div class="arrow arrow-first"></div>
+      <div class="arrow arrow-second"></div>
+    </div>
 
   </div>
 
@@ -68,49 +95,104 @@
 
 
 
-  <div class="container services mt-5" id="services" >
-    <h2 class="mb-4">Our Services</h2>
-    <div class="row">
+  <div class="container-fluid services mt-5" id="services">
 
-      <div class="col-md-4">
-        <img src="images/catering.png">
-        <h5>Outside Catering</h5>
-        <p></p>
-      </div>
-      <div class="col-md-4 border-right border-left">
-        <img src="images/table.png">
-        <h5>Restaurant</h5>
-        <p></p>
-
-      </div>
-      <div class="col-md-4">
-        <img src="images/delivery.png">
-        <h5>Company Delivery</h5>
-        <p></p>
-
-      </div>
+    <div class="container content">
 
 
-    </div>
-
-  </div>
-
-  <hr>
-
-  <div class="container Catering">
-
-  </div>
-
-  <hr>
-
-
-  <div class="footer" id="contact">
-    <div class="container">
+      <h2 class="mb-4">Our Services</h2>
       <div class="row">
 
 
-        <div class=" col-sm-4 col-md-4">
-          <h2><u><span class="red">H</span>OURS</u></h2>
+        <div class="col-md-4 text-center">
+          <div class="card p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+
+            <div class="" style="display:flex;justify-content:center;align-items:center;">
+              <img class="mb-4" src="images/catering.svg">
+            </div>
+
+            <h5 class="mb-3">Outside Catering</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4 text-center">
+          <div class="card p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+
+            <div class="" style="display:flex;justify-content:center;align-items:center;">
+              <img class="mb-4" src="images/table.svg">
+            </div>
+
+            <h5 class="mb-3">Fine Dining</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 text-center">
+          <div class="card p-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+
+            <div class="" style="display:flex;justify-content:center;align-items:center;">
+              <img class="mb-4" src="images/delivery.svg">
+            </div>
+
+            <h5 class="mb-3">Company Delivery</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+
+  <div class="container foodCategories">
+
+    <h2 class="my-4">Food Categories</h2>
+
+    <!-- 1 . HAVE IMAGES OF SPECIFIC FOOD CATEGORIES OFFERED EXPLAINING forEach
+          e.g CHICKEN - SHOWCASE THE DIFFERENT TYPES OF CHICKEN IN SLIDER -->
+    <!-- 2 . HAVE CATEGORIES BASED ONLY OFF OF CURRENT MENU -->
+    <!-- 3 . HAVE A TIMELINE TREE OF EVENTS WE HAVE PARTCIPATED IN WITH PHOTOGRAPH EVIDENCE -->
+
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class="container phylosophies">
+    <h2 class="my-4">Our phylosophies</h2>
+
+          <!-- 1 . HAVE HUGE TEXT EXPLAINING OUR SLOGAN "GOOD FOOS, GOOD MOOD" -->
+          <!-- 2 . HAVE BACKGROUND IMAGE -->
+          <!-- 3 . POSSIBLY HAVE A SLIDER -->
+
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class="footer" id="contact">
+    <div class="container">
+      <div class="row m-auto">
+
+
+        <div class="col-sm-4 col-md-4 ">
+          <h5 class="mb-5"><u>Hours</u></h5>
           <div class="row hoursRow">
             <img src="images/event.png" alt="">
             <p>Monday through Saturday</p>
@@ -121,7 +203,7 @@
             <p>8AM - 8PM</p>
 
           </div>
-          <div class="row hoursRow">
+          <div class="row hoursRow ">
             <img src="images/event.png" alt="">
             <p>Closed Sundays</p>
 
@@ -129,7 +211,7 @@
 
           <div class="map">
 
-            <h2><u><span class="red">M</span>ap and <span class="red">D</span>irections</u></h2>
+            <h5 class="mb-3"><u>Map and Directions</u></h5>
             <p><a href="https://goo.gl/maps/C3yHr5K1CgM2" target="_blank" style="cursor:pointer;color:#000;">Google maps &#x21AA;</a></p>
 
 
@@ -137,23 +219,46 @@
 
         </div>
 
-        <div class=" col-sm-4 col-md-4">
-          <h2><u> <span class="red">F</span>OLLOW <span class="red">U</span>S </u></h2>
-          <div class="row iconRow">
+        <div class=" col-sm-4 col-md-4 mb-5">
+          <h5 class="mb-5"><u> Follow Us </u></h5>
+          <div class="row iconRow m-auto">
             <ul>
+              <li class="icons expand mx-1" data-title="Facebook">
+                <a href="#">
+                  <span><i class="fab fa-facebook-f mx-2"></i></span>
+                </a>
+              </li>
 
-              <li class="icons expand" data-title="Facebook"><img src="images/iconfinder_Facebook_194929.png"></li>
-              <li class="icons expand" data-title="Instagram"><img src="images/iconfinder_Intsagram_194923.png"></li>
-              <li class="icons expand" data-title="Twitter"><img src="images/iconfinder_Twitter_194909.png"></li>
-              <li class="icons expand" data-title="Youtube"> <img src="images/iconfinder_YouTube_194904.png"></li>
-              <li class="icons expand" data-title="Whatsapp"><img src="images/iconfinder_23-whatsapp_843786.png"></li>
+              <li class="icons expand mx-1" data-title="Instagram">
+                <a href="#">
+                  <span><i class="fab fa-instagram mx-2"></i></span>
+                </a>
+              </li>
+
+              <li class="icons expand mx-1" data-title="Twitter">
+                <a href="#">
+                  <span><i class="fab fa-twitter mx-2"></i></span>
+                </a>
+              </li>
+
+              <li class="icons expand mx-1" data-title="Youtube">
+                <a href="#">
+                  <span><i class="fab fa-youtube mx-2"></i></span>
+                </a>
+              </li>
+
+              <li class="icons expand mx-1" data-title="Whatsapp">
+                <a href="#">
+                  <span><i class="fab fa-whatsapp mx-2"></i></span>
+                </a>
+              </li>
 
             </ul>
           </div>
         </div>
 
-        <div class=" col-sm-4 col-md-4">
-          <h2><u><span class="red">G</span>ET IN <span class="red">T</span>OUCH</u></h2>
+        <div class=" col-sm-4 col-md-4 mb-5">
+          <h5 class="mb-5"><u>Get In Touch</u></h5>
 
 
           <div class="card formCard">
@@ -161,13 +266,13 @@
 
             <form name="RegForm" action="" onsubmit="return sendEmail()" method="post">
 
-              <input type="text" name="Name" onfocus="this.value=''" placeholder="Your Name" required>
+              <input class="my-2" type="text" name="Name" onfocus="this.value=''" placeholder="Your Name" required>
 
-              <input type="email" name="Email" onfocus="this.value=''" placeholder="Your Email" required>
+              <input class="my-2" type="email" name="Email" onfocus="this.value=''" placeholder="Your Email" required>
 
-              <textarea cols="55" name="Comment" placeholder="Message" required></textarea>
+              <textarea class="my-2" cols="55" name="Comment" placeholder="Drop us a Message" required></textarea>
 
-              <button class="btn" type="submit" value="send" name="Submit">SUBMIT</button>
+              <button class="btn my-2" type="submit" value="send" name="Submit">SUBMIT</button>
 
             </form>
 
@@ -175,19 +280,20 @@
 
 
           <div style="width: 100%; height: 15px; border-bottom: 1px solid #FF0000; text-align: center">
-            <span style="font-size: 20px; background-color: whitesmoke; padding: 0 5px;">
+            <span style="font-size: 14px; background-color: #fff; padding: 0 5px;">
               OR TALK TO A HUMAN
               <!--Padding is optional-->
             </span>
           </div>
 
-          <div class="row secondaryContact">
+          <div class="row secondaryContact mt-4">
 
-            <span class="icons expand" data-title="Call or Email Us"><img src="images/contact.png"></span>
+            <!-- used <BR> for hacks -->
             <br>
-            <span style="font-size:20px;">+254 20441114</span>
+            <span><i class="fas fa-phone mr-2"></i>+254 20441114</span>
             <br>
-            <span style="font-size:20px;">pikasauce@gmail.com</span>
+            <br>
+            <span><i class="fas fa-envelope-open mr-2"></i>pikasauce@gmail.com</span>
 
           </div>
 
@@ -215,31 +321,38 @@
   </div>
 
 
-  </div>
 
-  <!-- BACK TO TOP BUTTON -->
-
-  <!-- BACK TO TOP BUTTON END-->
 
   <!-- SCRIPTS -->
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/smartScroll.min.js"></script>
   <script type="text/javascript">
-  (function ($) {
+    (function($) {
       "use strict";
       // all parameters are optional
       smartScroll.init({
-          speed: 1000, // default 500
-          offset: 50 // default 100
-      }, function () {
-          console.log("we're scrolling smooth bro");
+        speed: 1000, // default 500
+        offset: 50 // default 100
+      }, function() {
+        console.log("we're scrolling smooth bro");
       });
-  })(jQuery);
-
+    })(jQuery);
   </script>
   <script src="js/paraLasic.1.1.js"></script>
+  <script src="js/rellax.min.js"></script>
+  <script type="text/javascript">
+    console.log("we're rellaxing bro");
+    // Also can pass in optional settings block
+    var rellax = new Rellax('.rellax', {
+
+    });
+  </script>
 </body>
 
 </html>
