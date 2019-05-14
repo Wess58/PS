@@ -1,11 +1,11 @@
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  if (scroll >= 630) {
+  if (scroll >= 750) {
     $('.navbar-brand').css('color', '#000')
 
   } else {
     $('.navbar-brand').css('color', '#fff')
-    
+
   }
 });
 
@@ -16,7 +16,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
     document.getElementById("myBtn").style.display = "block";
   } else {
     document.getElementById("myBtn").style.display = "none";
@@ -35,8 +35,8 @@ $(document).ready(function() {
 
   toggle = document.querySelectorAll(".toggle")[0];
   nav = document.querySelectorAll("nav")[0];
-  toggle_open_text = "Menu";
-  toggle_close_text = "Close";
+  toggle_open_text = "MENU";
+  toggle_close_text = "CLOSE";
 
   toggle.addEventListener(
     "click",
