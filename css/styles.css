@@ -64,11 +64,11 @@ hr {
   color: #ff0000;
 }
 
-.slogan {
+.Intro .slogan {
   margin-top: 5%;
 }
 
-.slogan p {
+.Intro .slogan p {
   display: block;
   text-align: center;
   font-size: 130px;
@@ -80,6 +80,14 @@ hr {
   -webkit-text-stroke-color: #000; */
 }
 
+.inTouchBtn,
+.inTouchBtn:active,
+.inTouchBtn:focus {
+  border-radius: 20px;
+  z-index: 999;
+  box-shadow: 5px 30px 40px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* *********************************** */
 /* SERVICES SECTION STYLES START*/
 /* *********************************** */
@@ -87,7 +95,7 @@ hr {
   position: relative;
 }
 
-.content::before {
+.services .content::before {
   content: '';
   width: 50%;
   height: 100px;
@@ -98,7 +106,7 @@ hr {
   transform: skewY(5deg);
 }
 
-.content::after {
+.services .content::after {
   content: '';
   width: 50%;
   height: 100px;
@@ -133,6 +141,100 @@ hr {
   letter-spacing: 1px;
 }
 
+/* .services .circle {
+  position: absolute;
+  top: -10px;
+  right: -5%;
+
+}
+.services .circle svg {
+  width: 300px;
+  height: 300px;
+} */
+
+
+/* *********************************** */
+/* PHYLOSOPHIES SECTION STYLES START*/
+/* *********************************** */
+.phylosophies {
+  height: 80vh;
+  position: relative;
+  background-color: #000;
+}
+
+.phylosophies .content::before {
+  content: '';
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -37px;
+  left: 0;
+  background: #000;
+  transform: skewY(5deg);
+}
+
+.phylosophies .content::after {
+  content: '';
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -37px;
+  right: 0;
+  z-index: -1;
+  background: #000;
+  transform: skewY(-5deg);
+}
+
+.phylosophies h6 {
+
+  font-size: 100px;
+  color: #464545;
+  letter-spacing: 10px;
+}
+
+.phylosophies h6 i {
+  font-size: 50px;
+  position: relative;
+  top: -40px;
+}
+
+.phylosophies h6 span {
+  color: #ff000099;
+}
+
+.phylosophies p {
+  color: #464545;
+  font-size: 50px;
+}
+
+.phylosophies p i {
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+}
+
+/* .phylosophies .sun1 {
+  position: absolute;
+  top: 200px;
+  left: -10%;
+}
+.phylosophies .sun1 svg {
+  width: 500px;
+  height: 500px;
+}
+
+.phylosophies .sun2 {
+  position: absolute;
+  top: 200px;
+  right: 5%;
+}
+
+.phylosophies .sun2 svg {
+  width: 300px;
+  height: 300px;
+} */
+
+
 /* *********************************** */
 /* FOOTER AND BELOW STYLES START*/
 /* *********************************** */
@@ -140,6 +242,29 @@ hr {
   color: #464545;
   padding-top: 5%;
   text-align: center;
+  position: relative;
+}
+
+.footer .content::before {
+  content: '';
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -119px;
+  left: 0;
+  background: #fff;
+  transform: skewY(5deg);
+}
+
+.footer .content::after {
+  content: '';
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -119px;
+  right: 0;
+  background: #fff;
+  transform: skewY(-5deg);
 }
 
 .footer p {
@@ -158,6 +283,35 @@ hr {
   width: 30px;
   height: 30px;
 }
+/* .footer .egg {
+  position: absolute;
+  top: -100px;
+  right: -5%;
+}
+
+.footer .egg svg {
+  width: 400px;
+  height: 400px;
+  transform: rotate(-30deg);
+
+} */
+.footer .slogan {
+  /* position: absolute;
+  top: 50%;
+  left: 10%; */
+}
+
+.footer .slogan p {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: 'Knewave', cursive;
+  color: #0001;
+  /* color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000; */
+}
 
 .hoursRow {
   margin-left: 2px;
@@ -175,14 +329,14 @@ hr {
   color: #FF0000;
 }
 
-.iconRow {
+/* .iconRow {
   margin-right: 2px;
   margin-left: 2px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .iconRow ul {
   margin: auto;
@@ -242,7 +396,7 @@ textarea {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-button {
+.formCard button {
   outline: none;
   width: 80%;
   margin: auto;
@@ -252,7 +406,7 @@ button {
   border: 1px solid #ff0000 !important;
 }
 
-button:hover {
+.formCard button:hover {
   color: #fff !important;
   background-color: #ff0000 !important;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
@@ -262,6 +416,8 @@ button:hover {
   display: inline;
   font-size: 20px;
 }
+
+
 
 .Embeded_map {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
@@ -642,6 +798,53 @@ button:hover {
 /* SCROLL DOWN ANIMATION END*/
 /* ****************************************************** */
 /* ****************************************************** */
+/* ROTATION ANIMATION START*/
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 80s linear infinite;
+  -moz-animation: rotating 80s linear infinite;
+  -ms-animation: rotating 80s linear infinite;
+  -o-animation: rotating 80s linear infinite;
+  animation: rotating 80s linear infinite;
+}
+
+/* ROTATION ANIMATION END*/
+/* ****************************************************** */
+/* ****************************************************** */
 /* MEDIA QUERRY CLASSES */
 @media (max-width: 1280px) {}
 
@@ -683,6 +886,10 @@ button:hover {
   .services .col-md-4 {
     margin-top: 10%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .phylosophies h6 {
+    font-size: 60px;
   }
 
   .footer {
