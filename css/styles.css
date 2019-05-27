@@ -141,7 +141,7 @@ hr {
   letter-spacing: 1px;
 }
 
-/* .services .circle {
+.services .circle {
   position: absolute;
   top: -10px;
   right: -5%;
@@ -150,7 +150,26 @@ hr {
 .services .circle svg {
   width: 300px;
   height: 300px;
-} */
+}
+
+
+/* *********************************** */
+/* FOODCATEGORIES SECTION STYLES START*/
+/* *********************************** */
+
+.foodCategories .slick{
+  display: inline;
+}
+.foodCategories .slick div{
+  height: 45vh;
+}
+.foodCategories .slick img{
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+
+}
 
 
 /* *********************************** */
@@ -213,7 +232,7 @@ hr {
   top: -10px;
 }
 
-/* .phylosophies .sun1 {
+.phylosophies .sun1 {
   position: absolute;
   top: 200px;
   left: -10%;
@@ -232,7 +251,7 @@ hr {
 .phylosophies .sun2 svg {
   width: 300px;
   height: 300px;
-} */
+}
 
 
 /* *********************************** */
@@ -283,7 +302,7 @@ hr {
   width: 30px;
   height: 30px;
 }
-/* .footer .egg {
+.footer .egg {
   position: absolute;
   top: -100px;
   right: -5%;
@@ -294,7 +313,7 @@ hr {
   height: 400px;
   transform: rotate(-30deg);
 
-} */
+}
 .footer .slogan {
   /* position: absolute;
   top: 50%;
@@ -328,15 +347,6 @@ hr {
 .footer .red {
   color: #FF0000;
 }
-
-/* .iconRow {
-  margin-right: 2px;
-  margin-left: 2px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .iconRow ul {
   margin: auto;
