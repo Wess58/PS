@@ -1,6 +1,6 @@
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  if (scroll >= 750) {
+  if (scroll >= 650) {
     $('.navbar-brand').css('color', '#000')
 
   } else {
@@ -56,4 +56,49 @@ $(document).ready(function() {
   setTimeout(function() {
     nav.classList.toggle("open");
   }, 100);
+});
+
+
+//INITIALIZE SLICK SLIDER
+$(document).ready(function() {
+  $('.autoplay').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    //  centerMode: true,
+    // centerPadding: '60px',
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [{
+      breakpoint: 1030,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplaySpeed: 4000
+
+
+      }
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: false
+
+      }
+    }, {
+      breakpoint: 500,
+      settings: {
+        autoplaySpeed: 2500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '60px'
+
+
+      }
+    }]
+  });
 });
