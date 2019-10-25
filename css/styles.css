@@ -24,33 +24,8 @@ hr {
   visibility: hidden;
 }
 
-/* *********************************** */
-/* INTRO SECTION STYLES START*/
-/* *********************************** */
-.Intro {
-  height: 90vh;
-  background-image: -webkit-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
-  background-image: -o-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-  padding: 5%;
-}
-
-.Intro .red {
-  color: #FF0000;
-  /* color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff0000; */
-}
-
 .navbar-brand {
-  color: #fff;
+  color: #202124;
   font-family: 'Rock Salt', cursive;
   font-size: 20px;
   position: fixed;
@@ -64,14 +39,40 @@ hr {
   color: #ff0000;
 }
 
-.Intro .slogan {
-  margin-top: 5%;
+/* *********************************** */
+/* INTRO SECTION STYLES START*/
+/* *********************************** */
+.landingSection {
+  padding: 5%;
 }
 
-.Intro .slogan p {
+.Intro {
+  height: 70vh;
+  background-image: -webkit-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
+  background-image: -o-linear-gradient(top left, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0), rgba(0, 0, 0, 0.5), transparent), url("../images/IntroPic.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  padding: 5%;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Intro .red {
+  color: #FF0000;
+  /* color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff0000; */
+}
+
+.Intro .slogan h1 {
   display: block;
-  text-align: center;
-  font-size: 130px;
+  font-size: 100px;
   letter-spacing: 5px;
   font-family: 'Knewave', cursive;
   color: #fff;
@@ -79,13 +80,20 @@ hr {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000; */
 }
+.Intro p{
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 
 .inTouchBtn,
 .inTouchBtn:active,
 .inTouchBtn:focus {
-  border-radius: 20px;
-  z-index: 999;
+  border-radius: 25px;
+  width: 200px;
+  z-index: 10000 !important;
   box-shadow: 5px 30px 40px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 /* *********************************** */
@@ -95,7 +103,7 @@ hr {
   position: relative;
 }
 
-.services .content::before {
+/* .services .content::before {
   content: '';
   width: 50%;
   height: 100px;
@@ -115,13 +123,12 @@ hr {
   right: 0;
   background: #fff;
   transform: skewY(-5deg);
-}
-
+} */
 .services .card {
   height: 340px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .services img {
@@ -129,48 +136,52 @@ hr {
   height: 70px;
 }
 
+.services h2{
+  font-weight: 600;
+  color: #3c4043;
+}
+
 .services h5 {
   letter-spacing: 2px;
-  color: #000;
+  color: #3c4043;
+  font-weight: 600;
   font-size: 30px;
   text-decoration: underline;
-  font-weight: 550;
 }
 
 .services p {
   letter-spacing: 1px;
+  color: #80868b;
 }
 
 .services .circle {
   position: absolute;
   top: -10px;
   right: -5%;
-
 }
+
 .services .circle svg {
   width: 300px;
   height: 300px;
 }
 
-
 /* *********************************** */
 /* FOODCATEGORIES SECTION STYLES START*/
 /* *********************************** */
-
-.foodCategories .slick{
+.foodCategories .slick {
   display: inline;
 }
-.foodCategories .slick div{
+
+.foodCategories .slick div {
   height: 45vh;
 }
-.foodCategories .slick img{
+
+.foodCategories .slick img {
   width: 250px;
   height: 350px;
   border-radius: 10px;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
-
 }
-
 
 /* *********************************** */
 /* PHYLOSOPHIES SECTION STYLES START*/
@@ -205,7 +216,6 @@ hr {
 }
 
 .phylosophies h6 {
-
   font-size: 100px;
   color: #464545;
   letter-spacing: 10px;
@@ -237,6 +247,7 @@ hr {
   top: 200px;
   left: -10%;
 }
+
 .phylosophies .sun1 svg {
   width: 500px;
   height: 500px;
@@ -252,7 +263,6 @@ hr {
   width: 300px;
   height: 300px;
 }
-
 
 /* *********************************** */
 /* FOOTER AND BELOW STYLES START*/
@@ -302,6 +312,7 @@ hr {
   width: 30px;
   height: 30px;
 }
+
 .footer .egg {
   position: absolute;
   top: -100px;
@@ -312,8 +323,8 @@ hr {
   width: 400px;
   height: 400px;
   transform: rotate(-30deg);
-
 }
+
 .footer .slogan {
   /* position: absolute;
   top: 50%;
@@ -426,8 +437,6 @@ textarea {
   display: inline;
   font-size: 20px;
 }
-
-
 
 .Embeded_map {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);

@@ -1,12 +1,13 @@
 $(window).scroll(function() {
+
   var scroll = $(window).scrollTop();
-  if (scroll >= 650) {
-    $('.navbar-brand').css('color', '#000')
-
-  } else {
-    $('.navbar-brand').css('color', '#fff')
-
-  }
+  // if (scroll <= intro ) {
+  //   $('.navbar-brand').css('color', '#000')
+  //
+  // } else {
+  //   $('.navbar-brand').css('color', '#fff')
+  //
+  // }
 });
 
 
